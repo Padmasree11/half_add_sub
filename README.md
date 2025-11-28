@@ -73,7 +73,7 @@ RegisterNumber:25008840
 
 
 **Half Adder**
-
+```
 module half_adder (
     input  wire a, b,     // Inputs
     output wire sum,      // Sum output
@@ -85,10 +85,11 @@ module half_adder (
     assign carry = a & b;   // AND for carry
 
 endmodule
+```
 
 
-**Half Subtractor**
-
+## Half Subtractor
+```
 module half_subtractor (
     input  wire a, b,         // Inputs
     output wire diff, borrow  // Outputs
@@ -98,7 +99,7 @@ module half_subtractor (
     assign borrow = ~a & b;    // Borrow when a < b
 
 endmodule
-
+```
 **RTL Schematic**
 **Half Adder**
 <img width="1920" height="1080" alt="Screenshot (103)" src="https://github.com/user-attachments/assets/41554039-d0b5-4b6f-b86f-19322c83fb10" />
